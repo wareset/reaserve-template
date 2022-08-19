@@ -1,0 +1,29 @@
+{
+  "exclude": ["**/node_modules", "./src/assets"],
+  "include": ["./src/**/*.ts", "./src/**/*.tsx"],
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "#types/*": ["@types/*"],
+      "#routes/*": ["routes/*"],
+      "#client/*": ["module/client/*"],
+      "#server/*": ["module/server/*"],
+      "#common/*": ["module/common/*"]
+    },
+    "jsx": "preserve",
+    "target": "esnext",
+    "module": "esnext",
+    "allowJs": true,
+    "strict": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  }
+}

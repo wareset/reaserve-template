@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="theme-color" content="#333333">
+	<link type="image/png" rel="icon" href="/favicon.png">
+	<!-- <meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="mobile-web-app-capable" content="yes" /> -->
+
+	${rease.head}
+
+	<link type="text/css" rel="stylesheet" href="/css/animate.compat.css">
+	<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="/css/bootstrap-icons.css">
+	<link type="text/css" rel="stylesheet" href="/css/fa/css/fontawesome.min.css">
+
+	${rease.styles}
+
+	<script ${rease.nonce}>
+		if (typeof Promise === 'undefined')
+			document.write('<script defer crossorigin="anonymous" type="text/javascript" src="/js/bluebird.core.min.js"><\/scr' + 'ipt>')
+		if (typeof fetch === 'undefined')
+			document.write('<script defer crossorigin="anonymous" type="text/javascript" src="/js/fetch.umd.js"><\/scr' + 'ipt>')
+	</script>
+
+	${rease.scripts}
+	<script defer crossorigin="anonymous" type="text/javascript" src="/js/system.min.js"></script>
+	<script defer crossorigin="anonymous" type="systemjs-module" src="/build/index.js"></script>
+</head>
+
+<body>
+	${rease.body}
+</body>
+
+</html>

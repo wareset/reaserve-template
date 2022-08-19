@@ -1,0 +1,95 @@
+{
+  "name": "reaserve-template",
+  "version": "0.2.0",
+  "description": "WIP test reaserver",
+  "author": "rease <cftcview@gmail.com>",
+  "homepage": "https://github.com/wareset/timeline#readme",
+  "license": "MIT",
+  "private": true,
+  "bin": "app/index.js",
+  "pkg": {
+    "assets": [
+      "app/assets/**/*"
+    ],
+    "targets": [
+      "node16-macos-x64",
+      "node16-linux-x64",
+      "node16-win-x64"
+    ],
+    "outputPath": "pkg"
+  },
+  "scripts": {
+    "dev": "rollup -c -w & sleep 10 && cd ./app && DEV=true PORT=3000 nodemon --inspect ./index.js",
+    "build": "rollup -c",
+    "build:pkg": "pkg ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wareset/timeline.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wareset/timeline/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/plugin-proposal-class-properties": "^7.18.0",
+    "@babel/plugin-transform-block-scoping": "^7.18.0",
+    "@babel/plugin-transform-template-literals": "^7.18.0",
+    "@babel/preset-env": "^7.18.0",
+    "@fortawesome/fontawesome-free": "^6.1.0",
+    "@rollup/plugin-alias": "^3.1.0",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-image": "2.1.1",
+    "@rollup/plugin-inject": "^4.0.0",
+    "@rollup/plugin-json": "4.1.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-replace": "^4.0.0",
+    "@rollup/plugin-sucrase": "^4.0.0",
+    "@types/better-sqlite3": "^7.5.0",
+    "@types/bytes": "^3.1.0",
+    "@types/compression": "^1.7.2",
+    "@types/crypto-js": "4.1.1",
+    "@types/fluent-ffmpeg": "2.1.20",
+    "@types/node-fetch": "2.6.1",
+    "@types/sockjs": "^0.3.33",
+    "@types/sockjs-client": "^1.5.1",
+    "browserslist": "^4.20.0",
+    "nodemon": "^2.0.0",
+    "pg-minify": "1.6.2",
+    "pkg": "5.8.0",
+    "rastree": "^0.2.0",
+    "rease-use": "0.x",
+    "rease-bootstrap": "0.x",
+    "rollup": "^2.78.0",
+    "rollup-plugin-rease": "^0.2.0",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "svgo": "2.8.0",
+    "terser": "^5.14.2",
+    "utility-types": "3.10.0"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "1.1.0",
+    "@ffprobe-installer/ffprobe": "1.4.1",
+    "aliquot": "1.0.0",
+    "better-sqlite3": "^7.5.0",
+    "bytes": "3.1.2",
+    "compression": "^1.7.0",
+    "cors": "^2.8.0",
+    "crypto-js": "4.1.1",
+    "fluent-ffmpeg": "2.1.2",
+    "helmet": "^5.1.0",
+    "js-cookie": "3.0.1",
+    "mime-xdg": "^1.0.0",
+    "node-fetch": "2.6.7",
+    "rease": "^0.2.0",
+    "reaserve": "^0.2.0",
+    "sirv": "^2.0.0",
+    "sockjs": "^0.3.24",
+    "sockjs-client": "^1.6.1",
+    "timethen": "1.0.0",
+    "undici": "^5.9.1"
+  }
+}
