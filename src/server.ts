@@ -64,6 +64,6 @@ import { socketServer, SOCKET_PREFIX } from '#common/sockjs'
 // Если поставить его над роутером то все сломается. Как так???
 socketServer.installHandlers(server, { prefix: SOCKET_PREFIX })
 
-reaserve.listen(+process.env.PORT! || 3000)
+server.listen(+process.env.PORT! || 3000)
 
 export default reaserve
